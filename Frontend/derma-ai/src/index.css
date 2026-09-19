@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* ── Fix: Prevent blinking cursor on non-editable elements ── */
+@layer base {
+  /* Hide caret everywhere by default */
+  *,
+  *::before,
+  *::after {
+    caret-color: transparent;
+  }
+
+  /* Restore caret only in actual input elements */
+  input,
+  textarea,
+  [contenteditable="true"] {
+    caret-color: auto;
+  }
+
+  /* Ensure default cursor on body */
+  html,
+  body {
+    cursor: default;
+  }
+
+  /* Remove focus outline from non-interactive elements */
+  *:focus {
+    outline: none;
+  }
+
+  /* Restore focus ring on interactive elements for accessibility */
+  input:focus,
+  textarea:focus,
+  select:focus,
+  button:focus-visible,
+  a:focus-visible {
+    outline: revert;
+  }
+}

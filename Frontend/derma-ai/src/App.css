@@ -1,0 +1,10 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Prevent blinking cursor on non-input elements */
+*:focus:not(input):not(textarea):not(select):not(button):not(a):not([tabindex]) {
+  outline: none;
+  caret-color: transparent;
+}
