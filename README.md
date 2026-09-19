@@ -171,7 +171,6 @@ The system then maps the model output to the corresponding skin-condition inform
 
 The following screenshots are taken from the actual DermaAI user interface and are included in the repository's `Screenshots` folder.
 
-> **Note:** Keep the filenames and extensions exactly as shown below so that the images render correctly on GitHub.
 
 ---
 
